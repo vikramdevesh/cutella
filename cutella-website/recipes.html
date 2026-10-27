@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipes | Cutella® India</title>
+  <meta name="description" content="Cutella recipes to bake and share: pancakes, crêpes, brownies, shakes and more — plus jar up-cycling ideas.">
+  <meta name="theme-color" content="#d61020">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / Recipes</div>
+      <span class="eyebrow">Feeling yummy?</span>
+      <h1>There are new recipes to bake and share</h1>
+      <p>Easy breakfasts, show-stopping desserts and five-minute snacks — all with a generous spoon of Cutella.</p>
+      <div class="subnav"><a href="#recipes">All recipes</a><a href="#upcycle">Up-cycle your jar</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="recipes">
+    <div class="container">
+      <div class="filters" role="toolbar" aria-label="Filter recipes">
+        <button class="tab" data-filter="All" aria-selected="true">All</button>
+        <button class="tab" data-filter="Breakfast" aria-selected="false">Breakfast</button>
+        <button class="tab" data-filter="Dessert" aria-selected="false">Dessert</button>
+        <button class="tab" data-filter="Drinks" aria-selected="false">Drinks</button>
+        <button class="tab" data-filter="Snacks" aria-selected="false">Snacks</button>
+      </div>
+      <div class="grid grid--3" id="recipeGrid" data-recipes></div>
+    </div>
+  </section>
+  <section class="section section--cream" id="upcycle">
+    <div class="container">
+      <div class="split" style="margin-bottom:50px">
+        <div class="reveal">
+          <span class="eyebrow">Unleash your creativity</span>
+          <h2>Up-cycle your Cutella jar</h2>
+          <p class="claim">Our glass jars are sturdy, food-safe and far too pretty for the bin. Here are six favourite ideas from the Cutella community.</p>
+          <p>Share yours with <strong>#CutellaJarLife</strong> and we might feature it!</p>
+        </div>
+        <div class="split__media reveal"><img src="assets/img/upcycle.svg" alt="Cutella jar reused as a plant pot"></div>
+      </div>
+      <div class="grid grid--3">
+        <div class="card reveal" style="padding:28px"><div style="font-size:2.2rem">🌿</div><h3 style="margin-top:10px">Kitchen herb garden</h3><p style="color:#7a5a45;margin:0">Fill with pebbles, soil and a basil cutting. Sunny windowsill, water twice a week.</p></div>
+        <div class="card reveal" style="padding:28px"><div style="font-size:2.2rem">✏️</div><h3 style="margin-top:10px">Desk organiser</h3><p style="color:#7a5a45;margin:0">Wrap the jar in twine or washi tape and keep pens, brushes and scissors tidy.</p></div>
+        <div class="card reveal" style="padding:28px"><div style="font-size:2.2rem">🥣</div><h3 style="margin-top:10px">Overnight-oats glass</h3><p style="color:#7a5a45;margin:0">Oats, milk, a spoon of Cutella — refrigerate overnight and grab on the way out.</p></div>
+        <div class="card reveal" style="padding:28px"><div style="font-size:2.2rem">🕯️</div><h3 style="margin-top:10px">Fairy-light lantern</h3><p style="color:#7a5a45;margin:0">Pop in a string of battery fairy lights for an instant Diwali glow.</p></div>
+        <div class="card reveal" style="padding:28px"><div style="font-size:2.2rem">🧂</div><h3 style="margin-top:10px">Spice & dry-fruit store</h3><p style="color:#7a5a45;margin:0">Airtight lid, clear glass — perfect for almonds, cashews or masala.</p></div>
+        <div class="card reveal" style="padding:28px"><div style="font-size:2.2rem">🪙</div><h3 style="margin-top:10px">Savings jar</h3><p style="color:#7a5a45;margin:0">Cut a slot in the lid and start saving for your next Dunk Kit.</p></div>
+      </div>
+    </div>
+  </section>
+  <div class="modal" id="recipeModal" role="dialog" aria-modal="true" aria-label="Recipe"><div class="modal__box"></div></div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

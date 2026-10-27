@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us | Cutella® India</title>
+  <meta name="description" content="Get in touch with Cutella Foods — consumer care, trade enquiries and Café bookings.">
+  <meta name="theme-color" content="#d61020">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Home</a> / Contact us</div>
+      <span class="eyebrow">Contact us</span>
+      <h1>We'd love to hear from you</h1>
+      <p>Questions, feedback, a great recipe idea or a Café booking — drop us a line.</p>
+      
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split" style="align-items:start">
+      <div class="reveal">
+        <h2>Cutella consumer care</h2>
+        <p style="color:#7a5a45">Our team usually replies within one working day.</p>
+        <ul class="info-list" id="contactInfo"></ul>
+      </div>
+      <form class="form reveal" data-demo="Thank you! Ticket #CUT-2026-0412 created — we'll be in touch soon.">
+        <div class="row">
+          <label>Full name<input required name="name" placeholder="Aarav Sharma"></label>
+          <label>Email<input required type="email" name="email" placeholder="aarav@example.com"></label>
+        </div>
+        <div class="row">
+          <label>Phone (optional)<input name="phone" placeholder="+91 98XXX XXXXX"></label>
+          <label>Topic<select name="topic"><option>Product question</option><option>Feedback</option><option>Café booking</option><option>Trade / distribution</option><option>Careers</option></select></label>
+        </div>
+        <label>Message<textarea required name="message" rows="5" placeholder="Tell us everything…"></textarea></label>
+        <label style="display:flex;gap:10px;align-items:center;font-weight:500"><input type="checkbox" required> I agree to the Privacy Policy</label>
+        <button class="btn" type="submit" style="justify-self:start">Send message</button>
+        <p class="form-msg" style="color:#d61020;margin:0"></p>
+      </form>
+    </div>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const c = window.CUTELLA.company;
+      document.getElementById("contactInfo").innerHTML = [
+        ["📍", "Head office", c.address], ["📞", "Phone", c.phone], ["✉️", "Email", c.email], ["🕘", "Hours", c.hours]
+      ].map(([i, t, v]) => `<li><span class="ico">${i}</span><div><strong>${t}</strong><br><span style="color:#7a5a45">${v}</span></div></li>`).join("");
+    });
+  </script>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
